@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    display: flex;
+}
+.viewport {
+    display: flex;
+    flex-direction: row;
+    height: 580px;
+    justify-content: space-around;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.nav {
+    background-color: #222831;
+    height: 7vh;
+    width: 100vw;
+    align-content: center;
+}
+.network {
+    color: white;
+    text-align: center;
+}
+.feed {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.todo{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+}
+.perfil {
+    border: 2px solid #151516;
+    width: 250px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+}
+.container-linn,
+.container-lina,
+.container-mateo {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border: 2px solid #31363F;
+    border-radius: 5px;
+    padding: 20px;
+    width: 800px;
+    margin-top: 10px;
+}
+.container-linn {
+    margin-bottom: 10px;
+    background-color: #F0F3FF;
+}
+.container-lina {
+    margin-bottom: 10px;
+    background-color: #F0F3FF;
+}
+.container-mateo {
+    background-color: #F0F3FF;
+}
+
+#likes,
+#likes2,
+#likes3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-self: flex-end;
+    align-items: center;
+    width: 150px;
+}
+#megusta {
+    width: 60px;
+    height: 30px;
+    background-color: #FFF455;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
