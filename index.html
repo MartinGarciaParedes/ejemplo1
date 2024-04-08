@@ -5,47 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <link rel="icon" href="img/icon.jpg">
+    <title>Mi Perfil</title>    
 </head>
+
 <body>
-   
-    <div class="viewport">
-        <div class="nav"><h1 class="network">Network</h1></div>
-        <div class="feed"><h2>Your Feed</h2></div>
-         
-        <div class="todo">
-            <div class="perfil">
-                <img src="El_gatoo.webp" alt="el_gato">
-                <h1>El Gato</h1>
+    <nav class="navbar" id="navbar">
+       <h1 class="network" id="network">Network</h2>
+    </nav>
+    <div class="viewport" id="viewport">
+        <div class="profile" id="profile">
+           <img src="img/El_gatoo.webp" alt="Foto Perfil">
+           <h2 class="name" id="name">El Gato</h2>
+        </div>
+       <div class="likes-container" id="likes-container">
+           <h1 class="feed" id="feed">Your Feed</h1>
+           <div class="like-linn" id="like-linn">
+               <h2 class="name-linn">Linn O.</h2>
+               <div class="btn-likes" id="btn-likes">
+                <p class="likes-linn" id="likes-linn"> 0 like(s)</p>
+                  <button onclick="aumentarLike('likes-linn')" class="btn-linn" id="btn-linn">Like</button>
+               </div>
+                <p class="description-linn" id="description-linn">Acabo de configurar
+                    este nuevo bot de Discord, cuéntenme que opinan ustedes. 
+                    <a href="https://discord.com/">link</a></p>
             </div>
         
-            <div class="container">
-                <div class="container-linn">
-                    <h1>Linn O.</h1>
-                    <p id="likes" class="likes">0 Like(s)</p>  
-                    <button id="megusta" onclick="aumentarlike()">Like</button> 
-                    <p>Acabo de configurar este nuevo bot de Discord, cuéntenme que opinan ustedes. 
-                    <a href="https://discord.com/">link</a></p>
-                </div>
-        
-                <div class="container-lina">
-                    <h1>Lina K.</h1>
-                    <p id="likes2" class="likes2">0 Like(s)</p>
-                    <button id="megusta" onclick="aumentarlike2()">Like</button>
-                    <p>Acabo de terminar este <a href="https://visortmo.com/library/manhwa/63944/enlanube">nuevo 
-                    comic</a>, denle un vistazo.</p>
-                </div>
-        
-                <div class="container-mateo">
-                    <h1>Mateo H.</h1>
-                    <p id="likes3" class="likes3">0 Like(s)</p>
-                    <button id="megusta" onclick="aumentarlike3()">Like</button>
-                    <p>No puedo dejar de escuchar
-                    <a href="https://open.spotify.com/intl-es/album/1CCiPkCw8kCVIwXsNVQgJR?si=w1xcAomZQe2kDPMxriWlwA">
-                    este album</a>. ¿A quién más le gusta?</p>
-                </div>
+           <div class="like-lina" id="like-lina">
+            <h2 class="name-lina">Lina K.</h2>
+            <div class="btn-likes" id="btn-likes">
+              <p class="likes-lina" id="likes-lina">0 like(s)</p>
+              <button onclick="aumentarLike('likes-lina')" class="btn-lina" id="btn-lina">Like</button>
+            </div>
+            <p class="description-lina" id="description-lina">Acabo de terminar este <a href="https://mangaplus.shueisha.co.jp/titles/200098">nuevo comic.</a> denle un vistazo.</p>
+            </div>
+            <div class="like-mateo" id="like-mateo">
+            <h2 class="name-mateo">Mateo H.</h2>
+            <div class="btn-likes" id="btn-likes">
+              <p class="likes-mateo" id="likes-mateo">0 like(s)</p>
+              <button onclick="aumentarLike('likes-mateo')" class="btn-mateo" id="btn-mateo">Like</button>
+            </div>
+            <p class="description-mateo" id="description-mateo">no puedo dejar de escuchar este <a href="https://open.spotify.com/intl-es/album/1CCiPkCw8kCVIwXsNVQgJR?si=E90UlDvCQWOHbyplKgzSkg">album</a>. ¿A quién más le gusta?</p>
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

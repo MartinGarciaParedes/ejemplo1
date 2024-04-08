@@ -4,9 +4,64 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-body{
-    display: flex;
+.feed {
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
+
+.network {
+    color: white;
+    font-size: 30px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    background-color: #222831;
+    height: 7vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 320px;
+    border: 2px solid #31363F;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 67px;
+}
+
+.profile>img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+}
+
+.like-linn,
+.like-lina,
+.like-mateo {
+    border: 2px solid #31363F;
+    width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.likes-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
 .viewport {
     display: flex;
     flex-direction: row;
@@ -16,73 +71,21 @@ body{
     flex-wrap: wrap;
 }
 
-.nav {
-    background-color: #222831;
-    height: 7vh;
-    width: 100vw;
-    align-content: center;
-}
-.network {
-    color: white;
-    text-align: center;
-}
-.feed {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: center;
-    margin-top: 20px;
+.like-linn {
+    margin-bottom: 10px;
+    background-color: #f4f4f4;
 }
 
-.todo{
-    display: flex;
-    flex-direction:row;
-    justify-content: space-evenly;
-}
-.perfil {
-    border: 2px solid #151516;
-    width: 250px;
-    height: 320px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    border-radius: 5px;
-    margin-top: 10px;
-}
-img {
-    width: 150px;
-    height: 150px;
-    border-radius: 100%;
-}
-.container-linn,
-.container-lina,
-.container-mateo {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    border: 2px solid #31363F;
-    border-radius: 5px;
-    padding: 20px;
-    width: 800px;
-    margin-top: 10px;
-}
-.container-linn {
+.like-lina {
     margin-bottom: 10px;
-    background-color: #F0F3FF;
-}
-.container-lina {
-    margin-bottom: 10px;
-    background-color: #F0F3FF;
-}
-.container-mateo {
-    background-color: #F0F3FF;
+    background-color: #f4f4f4;
 }
 
-#likes,
-#likes2,
-#likes3 {
+.like-mateo {
+    background-color: #f4f4f4;
+}
+
+.btn-likes {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -90,11 +93,38 @@ img {
     align-items: center;
     width: 150px;
 }
-#megusta {
+
+.btn-lina,
+.btn-linn,
+.btn-mateo {
     width: 60px;
     height: 30px;
     background-color: #FFF455;
     border: none;
     border-radius: 5px;
     font-weight: bold;
+}
+
+.btn-lina,
+.btn-linn,
+.btn-mateo:hover {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 900px) {
+
+    .like-linn,
+    .like-lina,
+    .like-mateo {
+        width: 90%;
+        /* Cambiar el ancho al 90% del viewport */
+        margin: 10px auto;
+        /* Alinear al centro y agregar un pequeño margen */
+    }
+}
+
+@media only screen and (max-width: 1120px) {
+    .profile {
+        margin-top: 0px;
+    }
 }
